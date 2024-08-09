@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-weight: 600;
+}
+
+h1{
+    background-color: #1f1f1f;
+    color: #ffffff;
+    height: 5rem;
+    font-size: 3rem;
+    line-height: 5rem;
+    display: block;
+}
+
+.clr1 {
+    color: #f084a2;
+}
+
+.clr2 {
+    color: #c38fdb;
+}
+
+.clr3 {
+    color: #80acff;
+}
+
+.choice {
+    height: 180px;
+    width: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg1:hover{
+    cursor: pointer;
+    background-color: #f084a2;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px #f084a2;
+}
+
+.bg2:hover{
+    opacity: .8;
+    cursor: pointer;
+    background-color: #c38fdb;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px #c38fdb;
+}
+
+.bg3:hover{
+    opacity: .8;
+    cursor: pointer;
+    background-color: #80acff;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px #80acff;
+}
+
+img {
+    height: 170px;
+    width: 210px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 5rem;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+   
+}
+
+#user-score, #comp-score {
+    font-size: 4rem;
+}
+
+.msg-container {  
+    margin-top: 5rem;
+    display: inline-block;
+    
+    
+}
+
+button:hover {
+    z-index: 0;
+    box-shadow: 5px 5px 20px #f084a2, 5px 5px 20px #c38fdb,
+    5px 5px 20px #80acff;
+    
+}
+
+button {
+    position: relative;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 20px;
+    border: 1px solid ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+#msg::after{
+    content: '';
+    position: absolute;
+    height: 109%;
+    width: 104%;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #f084a2 , #c38fdb, #80acff);
+    z-index: -1;
+}
+
+#user-score, #msg2 {
+    color: #0ead69;
+}
+
+#comp-score, #msg1 {
+    color: #ee4266;
+}
+
